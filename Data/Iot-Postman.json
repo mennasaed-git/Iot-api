@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "b96774a9-7d66-444a-aaac-5b7b4d118ee8",
+		"name": "IOT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Devices Available For Sale",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/DevicesAvailableForSale",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"DevicesAvailableForSale"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Devices Waiting For Activation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/DevicesWaitingForActivation",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"DevicesWaitingForActivation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List All Devices",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/devices",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"devices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Device Status",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "READY"
+				},
+				"url": {
+					"raw": "http://localhost:8080/UpdateDevice/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"UpdateDevice",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
